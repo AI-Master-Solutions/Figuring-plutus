@@ -9,10 +9,13 @@
 cabalProject:
 
 {
-  name = "plutus-tx-template";
+  name = "nix-shell";
 
-  packages = [
-  ];
+  # prompt = null;
+
+  # welcomeMessage = null;
+
+  # packages = [];
 
   # scripts = {
   #   foo = {
@@ -29,17 +32,46 @@ cabalProject:
   #   KEY = "VALUE";
   # };
 
-  shellHook = ''
-    # Custom shellHook
-  '';
+  # shellHook = "";
 
-  preCommit = {
-    # cabal-fmt.enable = true;
-    # stylish-haskell.enable = true;
-    # fourmolu.enable = true;
-    # hlint.enable = true;
-    # editorconfig-checker.enable = true;
-    # nixpkgs-fmt.enable = true;
+  tools = {
+    # haskellCompilerVersion = cabalProject.args.compiler-nix-name;
+    # cabal-fmt = null;
+    # cabal-install = null;
+    # haskell-language-server = null;
+    # haskell-language-server-wrapper = null;
+    # fourmolu = null;
+    # hlint = null;
+    # stylish-haskell = null;
+    # ghcid = null;
+    # shellcheck = null;
+    # prettier = null;
+    # editorconfig-checker = null;
+    # nixfmt-classic = null;
+    # optipng = null;
+    # purs-tidy = null;
   };
+
+  # preCommit = {
+  #   cabal-fmt.enable = false;
+  #   cabal-fmt.extraOptions = "";
+  #   stylish-haskell.enable = false;
+  #   stylish-haskell.extraOptions = "";
+  #   fourmolu.enable = false;
+  #   fourmolu.extraOptions = "";
+  #   hlint.enable = false;
+  #   hlint.extraOptions = "";
+  #   shellcheck.enable = false;
+  #   shellcheck.extraOptions = "";
+  #   prettier.enable = false;
+  #   prettier.extraOptions = "";
+  #   editorconfig-checker.enable = false;
+  #   editorconfig-checker.extraOptions = "";
+  #   nixfmt-classic.enable = false;
+  #   nixfmt-classic.extraOptions = "";
+  #   optipng.enable = false;
+  #   optipng.extraOptions = "";
+  #   purs-tidy.enable = false;
+  #   purs-tidy.extraOptions = "";
+  # };
 }
- 

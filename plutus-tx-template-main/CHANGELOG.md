@@ -1,5 +1,5 @@
-# Plutus Tx Template Changelog
+# Revision history for my-project-blueprint
 
-## 12 Sep 2024
+## 0.1.0.0 -- YYYY-mm-dd
 
-Created CHANGELOG.md 
+* First version. Released on an unsuspecting world.
