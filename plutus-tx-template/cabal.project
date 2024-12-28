@@ -11,9 +11,3 @@ repository cardano-haskell-packages
 
 packages:
   ./.
-
--- We never, ever, want this.
-write-ghc-environment-files: never
-
-package template-haskell
-  flags: -template-haskell

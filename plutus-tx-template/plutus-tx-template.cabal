@@ -17,10 +17,10 @@ library scripts
 
   build-depends:
     , base
-    , plutus-core ^>=1.38.0.0
+    , plutus-core 
     , plutus-ledger-api ^>=1.38.0.0
-    , plutus-tx ^>=1.38.0.0
-    , plutus-tx-plugin ^>=1.38.0.0
+    , plutus-tx 
+    , plutus-tx-plugin 
 
   if !(impl(ghcjs) || os(ghcjs))
     build-depends: plutus-tx-plugin

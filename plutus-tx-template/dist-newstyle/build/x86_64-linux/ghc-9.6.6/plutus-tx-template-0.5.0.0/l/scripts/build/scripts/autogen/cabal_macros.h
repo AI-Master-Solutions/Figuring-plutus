@@ -20,6 +20,46 @@
   (major1) == 4 && (major2) <  18 || \
   (major1) == 4 && (major2) == 18 && (minor) <= 2)
 #endif /* MIN_VERSION_base */
+/* package plutus-core-1.38.0.0 */
+#ifndef VERSION_plutus_core
+#define VERSION_plutus_core "1.38.0.0"
+#endif /* VERSION_plutus_core */
+#ifndef MIN_VERSION_plutus_core
+#define MIN_VERSION_plutus_core(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  38 || \
+  (major1) == 1 && (major2) == 38 && (minor) <= 0)
+#endif /* MIN_VERSION_plutus_core */
+/* package plutus-ledger-api-1.38.0.0 */
+#ifndef VERSION_plutus_ledger_api
+#define VERSION_plutus_ledger_api "1.38.0.0"
+#endif /* VERSION_plutus_ledger_api */
+#ifndef MIN_VERSION_plutus_ledger_api
+#define MIN_VERSION_plutus_ledger_api(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  38 || \
+  (major1) == 1 && (major2) == 38 && (minor) <= 0)
+#endif /* MIN_VERSION_plutus_ledger_api */
+/* package plutus-tx-1.38.0.0 */
+#ifndef VERSION_plutus_tx
+#define VERSION_plutus_tx "1.38.0.0"
+#endif /* VERSION_plutus_tx */
+#ifndef MIN_VERSION_plutus_tx
+#define MIN_VERSION_plutus_tx(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  38 || \
+  (major1) == 1 && (major2) == 38 && (minor) <= 0)
+#endif /* MIN_VERSION_plutus_tx */
+/* package plutus-tx-plugin-1.38.0.0 */
+#ifndef VERSION_plutus_tx_plugin
+#define VERSION_plutus_tx_plugin "1.38.0.0"
+#endif /* VERSION_plutus_tx_plugin */
+#ifndef MIN_VERSION_plutus_tx_plugin
+#define MIN_VERSION_plutus_tx_plugin(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  38 || \
+  (major1) == 1 && (major2) == 38 && (minor) <= 0)
+#endif /* MIN_VERSION_plutus_tx_plugin */
 
 /* tool gcc-13.3.0 */
 #ifndef TOOL_VERSION_gcc
@@ -61,6 +101,16 @@
   (major1) == 2 && (major2) <  29 || \
   (major1) == 2 && (major2) == 29 && (minor) <= 2)
 #endif /* MIN_TOOL_VERSION_haddock */
+/* tool happy-2.1.3 */
+#ifndef TOOL_VERSION_happy
+#define TOOL_VERSION_happy "2.1.3"
+#endif /* TOOL_VERSION_happy */
+#ifndef MIN_TOOL_VERSION_happy
+#define MIN_TOOL_VERSION_happy(major1,major2,minor) (\
+  (major1) <  2 || \
+  (major1) == 2 && (major2) <  1 || \
+  (major1) == 2 && (major2) == 1 && (minor) <= 3)
+#endif /* MIN_TOOL_VERSION_happy */
 /* tool hpc-0.68 */
 #ifndef TOOL_VERSION_hpc
 #define TOOL_VERSION_hpc "0.68"
@@ -81,15 +131,15 @@
   (major1) == 0 && (major2) <  68 || \
   (major1) == 0 && (major2) == 68 && (minor) <= 9)
 #endif /* MIN_TOOL_VERSION_hsc2hs */
-/* tool pkg-config-1.8.1 */
+/* tool pkg-config-0.29.2 */
 #ifndef TOOL_VERSION_pkg_config
-#define TOOL_VERSION_pkg_config "1.8.1"
+#define TOOL_VERSION_pkg_config "0.29.2"
 #endif /* TOOL_VERSION_pkg_config */
 #ifndef MIN_TOOL_VERSION_pkg_config
 #define MIN_TOOL_VERSION_pkg_config(major1,major2,minor) (\
-  (major1) <  1 || \
-  (major1) == 1 && (major2) <  8 || \
-  (major1) == 1 && (major2) == 8 && (minor) <= 1)
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  29 || \
+  (major1) == 0 && (major2) == 29 && (minor) <= 2)
 #endif /* MIN_TOOL_VERSION_pkg_config */
 /* tool runghc-9.6.6 */
 #ifndef TOOL_VERSION_runghc
