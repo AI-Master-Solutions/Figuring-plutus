@@ -1,5 +1,5 @@
 cabal-version:      3.0
-name:               plutus-tx-template
+name:               ppbl2024-plutus-examples
 version:            1.0.0
 description:        plutus examples
 author:             gimbalabs team
