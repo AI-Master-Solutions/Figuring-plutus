@@ -1,5 +1,5 @@
-cabal-version:      2.4
-name:               ppbl2024-plutus-examples
+cabal-version:      3.0
+name:               plutus-tx-template
 version:            1.0.0
 description:        plutus examples
 author:             gimbalabs team
@@ -28,31 +28,13 @@ common common-all
                         -Wpartial-fields
                         -Wmissing-deriving-strategies
                         -Wunused-packages
-  build-depends:       aeson
-                    , bytestring
-                    , containers
-                    , cardano-api
-                    , plutus-ledger-api
-                    , plutus-tx-plugin
-                    , plutus-tx
-                    , text
-                    , serialise
-                    , plutus-core
-                    , tagged
-                    , prettyprinter
-                    , cardano-api
-                    , base
-                    , cardano-crypto-class
-                    , cardano-ledger-core
-                    , split
-                    , directory
-                    , filepath
-                    , plutus-script-utils
-                    , plutonomy
-                    , mtl
-                    , plutus-ledger
-                    , openapi3
 
+  build-depends:       plutus-core ^>=1.38.0.0
+                    , plutus-ledger-api ^>=1.38.0.0
+                    , plutus-tx ^>=1.38.0.0
+  
+  if !(impl(ghcjs) || os(ghcjs))
+    build-depends: plutus-tx-plugin
 
 
   ghc-options: -fobject-code -fno-ignore-interface-pragmas -fno-omit-interface-pragmas
