@@ -1,6 +1,6 @@
 cabal-version:   3.0
 name:            plutus-tx-template
-version:         0.1.0.0
+version:         0.5.0.0
 license:
 build-type:      Simple
 extra-doc-files: README.md
@@ -20,6 +20,7 @@ library scripts
     , plutus-core ^>=1.38.0.0
     , plutus-ledger-api ^>=1.38.0.0
     , plutus-tx ^>=1.38.0.0
+    , plutus-tx-plugin ^>=1.38.0.0
 
   if !(impl(ghcjs) || os(ghcjs))
     build-depends: plutus-tx-plugin
