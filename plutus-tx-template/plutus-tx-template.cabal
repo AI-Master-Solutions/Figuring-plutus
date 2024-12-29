@@ -18,7 +18,7 @@ library scripts
   build-depends:
     , base
     , plutus-core 
-    , plutus-ledger-api ^>=1.38.0.0
+    , plutus-ledger-api
     , plutus-tx 
     , plutus-tx-plugin 
 
